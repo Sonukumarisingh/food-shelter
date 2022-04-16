@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@300;500;800&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Mukta, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f3f3f3;
+    font-family: 'poppins',sans-serif;
+}
+.menu{
+    padding: 0 10px 30px 10px;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(350px,1fr));
+}
+.heading{
+    background-color: rgb(151, 80, 218);
+    color: #ffffff;
+    margin-bottom: 30px;
+    padding: 30px 0;
+    grid-column: 1/-1;
+    text-align: center;
+}
+.heading>h1{
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+}
+.heading>h3{
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 5px;
+}
+.food-items{
+    display: grid;
+    position: relative;
+    grid-template-rows: auto 1fr;
+    border-radius: 15px;
+   
+}
+.food-items img{
+    position: relative;
+    width: 85%;
+    border-radius: 15px 15px 0 0;
+}
+h1{
+    grid-column: 1/-1;
+    text-align:center;
+}
+.details{
+    padding: 20px 10px;
+    display: grid;
+    grid-template-rows: auto 1fr 50px;
+    grid-row-gap: 12px;
+}
+.details-sub{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.details-sub>h5{
+    font-weight: 600;
+    font-size: 18px;
+}
+.price{
+    text-align: center;
+}
+.details>button{
+    background-color: rgb(151,80,218);
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 180px;
+    height: 50px;
+}
+header{
+    background-image: url(../images/fooding1.jpg);
+    height: 100vh;
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    flex-wrap: wrap;
+    background-color: rgb(221, 105, 105);
+    font-size: 20px;
+}
+nav .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    }
+    nav ul li{
+        margin:0px 10px;
+    }
+    nav li a{
+        text-decoration: none;
+        color: white;
+    }
+    nav li a:hover{
+        color: rgb(219, 65, 65);
+    }
+
+    header .content{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        margin-top: 200px;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    header .content button{
+        width: 200px;
+        height: 45px;
+        border-radius: 5px;
+        background-color: maroon;
+        font-size: 1.25em;
+    }
+    header .content button:hover{
+        background-color: rgb(221, 76, 105);
+        cursor: pointer;
+    }
+
+    .middle{
+        display: flex;
+        
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: rgb(243, 214, 203);
+    }
+    .middle h3{
+        font-size: 1.50em;
+        color: white;
+    }
+    .middle h4{
+        font-size: 1.25em;
+       color:aliceblue;
+    }
+    .middle h5{
+        font-size: 1.15em;
+        
+    }
+    .middle .box{
+        margin: 20px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 150px;
+        border-radius: 15px;
+        box-shadow: 5px 5px 10px rgb(122, 4, 4);
+    }
+    .head{
+        text-align: center;
+        margin-top: 70px;
+        color: maroon;
+        font-size: 3em;
+    }
+    .middle .video{
+        margin: 20px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 350px;
+        height: 200px;
+        border-radius: 15px;
+        background-color: #ffffff;
+    }
+    
+    .blog{
+        display: flex;
+        flex-direction: column;
+        height: 200px;                                                                                                                                                                                                                                                                                                                        
+        border-left: 5px solid rgb(236, 14, 88);
+        margin: 20px;
+        box-shadow: 0px 0px 10px rgb(236, 14, 88);
+        padding: 10px 20px;
+        justify-content: space-evenly;
+        
+    }
+    .blog .title{
+        font-size: 2em;
+        color: saddlebrown;
+        text-decoration: underline;
+        text-transform: uppercase;
+    }
+    .blog .date{
+        font-size: 1.25;
+        font-weight: 500;
+        color: green;
+    }
+    .blog .content{
+        border-top: 1px solid palevioletred;
+        text-align: justify;
+        
+    }
+    .contact{
+        margin: 20px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        height: 500px;
+        
+        
+    }
+    .contact .left img{
+        width: 100%;
+        height: 60vh;
+    }
+    .contact .left{
+        flex-grow: 1;
+    }
+    .contact .right{
+        flex-grow: 2;
+    }
+    .contact .right .frm{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .contact .right input{
+        width: 100%;
+        height: 35px;
+        margin: 10px 0px;
+    }
+    .contact .right textarea{
+        width: 100%;
+        height: 100px;
+        margin: 10px 0px;
+
+    }
+
+    .contact .right button{
+        width: 100%;
+        height: 35px;
+        background-color: burlywood;
+        color: black;
+    }
+    footer{
+        background-color: rgb(66, 63, 63);
+        display: flex;
+        color: white;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    footer ul{
+        list-style-type: none;
+        display: flex;
+    }
+    footer ul a{
+        text-decoration: none;
+        color: rgb(211, 182, 16);
+        font-size: 20px;
+        margin-left: 20px;
+    }
